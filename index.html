@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Pomodoro Timer</h1>
+      <div>
+        <label>
+          Work Duration (minutes):
+          <input type="number" id="work-duration" value="25" min="1" />
+        </label>
+        <label>
+          Break Duration (minutes):
+          <input type="number" id="break-duration" value="5" min="1" />
+        </label>
+      </div>
+      <div id="timer">25:00</div>
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+      <button id="toggle-phase-btn">Switch Phase</button>
+
+      <audio id="start-sound" src="/sounds/start.mp3"></audio>
+      <audio id="end-sound" src="/sounds/end.mp3"></audio>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
